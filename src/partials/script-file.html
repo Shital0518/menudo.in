@@ -1,0 +1,76 @@
+<script src="assets/libs/tiny-slider/min/tiny-slider.js"></script>
+<script src="assets/libs/tobii/js/tobii.min.js"></script>
+<script src="assets/libs/shufflejs/shuffle.min.js"></script>
+<script src="assets/libs/feather-icons/feather.min.js"></script>
+
+<script src="assets/js/plugins.init.js"></script>
+<script src="assets/js/app.js"></script>
+
+<script>
+    const params = new Proxy(new URLSearchParams(window.location.search), {
+    get: (searchParams, prop) => searchParams.get(prop),
+});
+
+let some_key = params.some_key; // "some_value"
+console.log(params)
+console.log('some_key' + some_key)
+
+
+window.onload = function() {
+    const dataURL = './onebite.json'
+const options = {
+    method: "GET",
+    headers: new Headers({'content-type': 'application/json'}),
+    mode: 'no-cors'
+};
+
+let backgroungImage = "";
+
+fetch(dataURL, options)
+.then((response) => response.json())
+.then((data) => {
+console.log(data)  
+let restaurentDetails = data['restaurent-details'];
+let menuDetails = data['menu-details'];
+backgroungImage = restaurentDetails['backgroung-image']
+console.table(restaurentDetails)  
+
+const backgroungImageId = document.getElementById('backgroungImage');
+const backgroungImageUrl = "bg-[url('".concat(backgroungImage).concat("')]")
+console.table(backgroungImageUrl)
+
+//backgroungImageId.classList.add(backgroungImageUrl); // hidden class added
+
+
+
+})
+.catch(console.error);
+}
+
+
+
+/*
+
+fetch(myRequest)
+.then((response) => response.json())
+.then((data) => {
+for (const product of data.products) {
+  const listItem = document.createElement('li');
+  listItem.appendChild(
+    document.createElement('strong')
+  ).textContent = product.Name;
+  listItem.append(
+    ` can be found in ${
+      product.Location
+    }. Cost: `
+  );
+  listItem.appendChild(
+    document.createElement('strong')
+  ).textContent = `£${product.Price}`;
+  myList.appendChild(listItem);
+}
+})
+.catch(console.error);
+*/
+</script>
+

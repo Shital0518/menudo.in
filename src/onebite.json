@@ -1,0 +1,89 @@
+{
+    "restaurent-details":{
+        "name":"One Bite",
+        "backgroung-image":"https://png.pngtree.com/background/20210711/original/pngtree-summer-atmosphere-restaurant-supermarket-vegetable-psd-layered-promotion-background-picture-image_1098004.jpg",
+        "restaurent-logo":"http://user-testing.in/mykitchen/assets/images/logolat.png",
+        "weekday-open-hours":"Monday - Friday: 10 AM - 11 PM",
+        "weekend-open-hours":"Saturday - Sunday: 9 AM - 1 PM",
+        "contact-number":"",
+        "email-address":"",
+        "address":{
+            "address-line":"",
+            "city":"",
+            "state":""
+        },
+        "social-network":{
+            "facebook":"",
+            "instagram":"",
+            "snapchat":"",
+            "linkedin":"",
+            "twitter":"",
+            "whatsapp":"",
+            "telegram":"",
+            "youtube":""
+        }
+
+    },
+    "menu-details":[
+        {
+            "category-name":"STARTERS",
+            "seo":{
+                        
+            },
+            "category-items":[
+                {
+                    "food-name":"VEGETABLE SAMOSA",
+                    "food-description":"made with vegitable and deep fried",
+                    "food-image":"http://user-testing.in/mykitchen/assets/images/food/1.jpg",
+                    "price":"10",
+                    "food-type":"Veg",
+                    "is-available":"true",
+                    "seo":{
+
+                    }
+                },
+                {
+                    "food-name":"KERALA OMELETTE",
+                    "food-description":"made with Egg",
+                    "food-image":"http://user-testing.in/mykitchen/assets/images/food/4.jpg",
+                    "price":"20",
+                    "food-type":"Egg",
+                    "is-available":"true",
+                    "seo":{
+                        
+                    }
+                }
+            ]
+        },
+        {
+            "category-name":"BIRYANI",
+            "seo":{
+                        
+            },
+            "category-items":[
+                {
+                    "food-name":"NORTH INDIAN BIRYANI",
+                    "food-description":"vegitable Biryani",
+                    "food-image":"http://user-testing.in/mykitchen/assets/images/food/1.jpg",
+                    "price":"10",
+                    "food-type":"Veg",
+                    "is-available":"true",
+                    "seo":{
+                        
+                    }
+                },
+                {
+                    "food-name":"MALABAR DUM BIRYANI",
+                    "food-description":"made with chicken",
+                    "food-image":"http://user-testing.in/mykitchen/assets/images/food/4.jpg",
+                    "price":"20",
+                    "food-type":"Non-veg",
+                    "is-available":"true",
+                    "seo":{
+                        
+                    }
+                }
+            ]
+        }
+    ]
+}
