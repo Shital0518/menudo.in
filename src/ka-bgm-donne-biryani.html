@@ -1,0 +1,766 @@
+@@include("partials/main.html")
+
+<head>
+    @@include("partials/title-meta.html", {"title": "Donne Biryani"})
+    <!-- Css -->
+    @@include("partials/head-css.html")
+</head>
+
+@@include("partials/body.html")
+<!-- Loader Start -->
+<div id="preloader">
+    <div id="status">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+</div>
+<!-- Loader End -->
+
+<!-- Banner -->
+<div class="justify-center w-screen items-center  object-center">
+    <img src="assets/images/ka-bgm-donne-biryani/banner.png" class="md:h-2/3 w-full" alt="menu-do">
+</div>
+<!-- Banner -->
+
+
+<!-- Start -->
+<section class=" md:py-24 py-10 md:pt-5 bg-no-repeat bg-top" style="font-family: 'Merriweather';" id="menyou">
+
+    <div class="z-10 sticky top-0 mt-5 block container">
+
+        <button class="bg-orange-500 w-full bg-center mx-auto mb-1 p-2 container" onclick="showDrop()">
+            <p class="text-white"> Menu &#9660;</i></p>
+        </button>
+
+        <div class="hidden p-2 font-bold w-full bg-center mx-auto mb-1 container" id="dropMen" onclick="hideDrop()">
+            <ul class="w-full bg-center mx-auto container bg-gray-400 mb-5 text-center">
+                <hr>
+                <a href="#cat1" class="text-center">
+                    <li
+                        class="tracking-widest text-sm lg:text-xl hover:bg-blue-300 p-2 font-semibold w-full bg-center mx-auto mb-1 container">
+                        Veg Rice Items
+                    </li>
+                </a>
+                <hr>
+                <a href="#cat2" class="text-center">
+                    <li
+                        class="tracking-widest text-sm lg:text-xl hover:bg-blue-300 p-2 font-semibold w-full bg-center mx-auto mb-1 container">
+                        Tandoori Roti Items
+                    </li>
+                </a>
+                <hr>
+                <a href="#cat3" class="text-center">
+                    <li
+                        class="tracking-widest text-sm lg:text-xl hover:bg-blue-300 p-2 font-semibold w-full bg-center mx-auto mb-1 container">
+                        Soft Drinks
+                    </li>
+                </a>
+                <hr>
+                <a href="#cat4" class="text-center">
+                    <li
+                        class="tracking-widest text-sm lg:text-xl hover:bg-blue-300 p-2 font-semibold w-full bg-center mx-auto mb-1 container">
+                        Non-Veg Rice Items
+                    </li>
+                </a>
+                <hr>
+                <a href="#cat5" class="text-center">
+                    <li
+                        class="tracking-widest text-sm lg:text-xl hover:bg-blue-300 p-2 font-semibold w-full bg-center mx-auto mb-1 container">
+                        Veg Dishes
+                    </li>
+                </a>
+                <hr>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Start menu -->
+    <div class="container mt-5">
+        <div id="cat1" class="w-full">
+            <br><br>
+            <h2 class="mb-4 h2 font-bold mx-auto text-center"> <u> Veg Rice Items </u></h2>
+            
+            <div class="h-24 flex-shrink-0 border-2 border-indigo-500 group  items-center picture-item rounded-2xl mx-auto mb-3 flex  justify-start shadow-md ">
+                <div class="p-2 w-1/5 relative align-middle ">
+                    <img src="assets/images/ka-bgm-donne-biryani/steam-rice.jpeg"
+                        class="w-16 h-16 relative rounded-full group-hover:animate-[spin_10s_linear_infinite] h-25 w-25"
+                        alt="">
+                </div>
+                <div class="border-r-2 border-l-2 border-green-500 px-2 w-3/5 relative align-top p-0.5">
+                    <h2 class="mt-1 text-center">Steam Rice</h2>
+                    <p class="text-center mt-1 text-xs font-nunito text-gray-500 truncate overflow-visible whitespace-normal  dark:text-gray-400">
+                        &nbsp;
+                    </p>
+                </div>
+                <div class="w-1/5 relative">
+                    <h2 class="text-center"> <b> ₹ 45.0</b> </h2>
+                </div>
+            </div>
+
+            <div class="h-24 flex-shrink-0 border-2 border-orange-400 group  items-center picture-item rounded-2xl mx-auto mb-3 flex  justify-start shadow-md ">
+                <div class="p-2 w-1/5 relative align-middle ">
+                    <img src="assets/images/ka-bgm-donne-biryani/jira-rice.jpeg"
+                        class="w-16 h-14 relative rounded-full group-hover:animate-[spin_10s_linear_infinite] h-25 w-25"
+                        alt="">
+                </div>
+                <div class="border-r-2 border-l-2 border-fuchsia-600 px-2 w-3/5 relative align-top p-0.5">
+                    <h2 class="mt-1 text-center">Jira Rice</h2>
+                    <p class="text-center mt-1 text-xs font-nunito text-gray-500 truncate overflow-visible whitespace-normal  dark:text-gray-400">
+                        &nbsp;
+                    </p>
+                </div>
+                <div class="w-1/5 relative">
+                    <h2 class="text-center"> <b> ₹ 100.0</b> </h2>
+                </div>
+            </div>
+
+            <div class="h-24 flex-shrink-0 border-2 border-indigo-500 group  items-center picture-item rounded-2xl mx-auto mb-3 flex  justify-start shadow-md ">
+                <div class="p-2 w-1/5 relative align-middle ">
+                    <img src="assets/images/ka-bgm-donne-biryani/veg-biryani.jpeg"
+                        class="w-16 h-16 relative rounded-full group-hover:animate-[spin_10s_linear_infinite] h-25 w-25"
+                        alt="">
+                </div>
+                <div class="border-r-2 border-l-2 border-green-500 px-2 w-3/5 relative align-top p-0.5">
+                    <h2 class="mt-1 text-center">Veg Biryani</h2>
+                    <p class="text-center mt-1 text-xs font-nunito text-gray-500 truncate overflow-visible whitespace-normal  dark:text-gray-400">
+                        &nbsp;
+                    </p>
+                </div>
+                <div class="w-1/5 relative">
+                    <h2 class="text-center"> <b> ₹ 110.0</b> </h2>
+                </div>
+            </div>
+
+            <div class="h-24 flex-shrink-0 border-2 border-orange-400 group  items-center picture-item rounded-2xl mx-auto mb-3 flex  justify-start shadow-md ">
+                <div class="p-2 w-1/5 relative align-middle ">
+                    <img src="assets/images/ka-bgm-onebite/cold-coffee.png"
+                        class="w-16 h-14 relative rounded-full group-hover:animate-[spin_10s_linear_infinite] h-25 w-25"
+                        alt="">
+                </div>
+                <div class="border-r-2 border-l-2 border-fuchsia-600 px-2 w-3/5 relative align-top p-0.5">
+                    <h2 class="mt-1 text-center">Cold Coffee</h2>
+                    <p class="text-center mt-1 text-xs font-nunito text-gray-500 truncate overflow-visible whitespace-normal  dark:text-gray-400">
+                        &nbsp;
+                    </p>
+                </div>
+                <div class="w-1/5 relative">
+                    <h2 class="text-center"> <b> ₹ 110.0</b> </h2>
+                </div>
+            </div>
+
+            <div class="h-24 flex-shrink-0 border-2 border-indigo-500 group  items-center picture-item rounded-2xl mx-auto mb-3 flex  justify-start shadow-md ">
+                <div class="p-2 w-1/5 relative align-middle ">
+                    <img src="assets/images/ka-bgm-onebite/oreo.png"
+                        class="w-16 h-16 relative rounded-full group-hover:animate-[spin_10s_linear_infinite] h-25 w-25"
+                        alt="">
+                </div>
+                <div class="border-r-2 border-l-2 border-green-500 px-2 w-3/5 relative align-top p-0.5">
+                    <h2 class="mt-1 text-center">Oreo/Kitcat</h2>
+                    <p class="text-center mt-1 text-xs font-nunito text-gray-500 truncate overflow-visible whitespace-normal  dark:text-gray-400">
+                        &nbsp;
+                    </p>
+                </div>
+                <div class="w-1/5 relative">
+                    <h2 class="text-center"> <b> ₹ 140.0</b> </h2>
+                </div>
+            </div>
+
+            <div class="h-24 flex-shrink-0 border-2 border-orange-400 group  items-center picture-item rounded-2xl mx-auto mb-3 flex  justify-start shadow-md ">
+                <div class="p-2 w-1/5 relative align-middle ">
+                    <img src="assets/images/ka-bgm-onebite/regular-tea.png"
+                        class="w-16 h-14 relative rounded-full group-hover:animate-[spin_10s_linear_infinite] h-25 w-25"
+                        alt="">
+                </div>
+                <div class="border-r-2 border-l-2 border-fuchsia-600 px-2 w-3/5 relative align-top p-0.5">
+                    <h2 class="mt-1 text-center">Regular Tea</h2>
+                    <p class="text-center mt-1 text-xs font-nunito text-gray-500 truncate overflow-visible whitespace-normal  dark:text-gray-400">
+                        &nbsp;
+                    </p>
+                </div>
+                <div class="w-1/5 relative">
+                    <h2 class="text-center"> <b> ₹ 25.0</b> </h2>
+                </div>
+            </div>
+
+            <div class="h-24 flex-shrink-0 border-2 border-indigo-500 group  items-center picture-item rounded-2xl mx-auto mb-3 flex  justify-start shadow-md ">
+                <div class="p-2 w-1/5 relative align-middle ">
+                    <img src="assets/images/ka-bgm-onebite/lemon-ice-tea.png"
+                        class="w-16 h-16 relative rounded-full group-hover:animate-[spin_10s_linear_infinite] h-25 w-25"
+                        alt="">
+                </div>
+                <div class="border-r-2 border-l-2 border-green-500 px-2 w-3/5 relative align-top p-0.5">
+                    <h2 class="mt-1 text-center">Ice Tea</h2>
+                    <p class="text-center mt-1 text-xs font-nunito text-gray-500 truncate overflow-visible whitespace-normal  dark:text-gray-400">
+                        Lemon
+                    </p>
+                </div>
+                <div class="w-1/5 relative">
+                    <h2 class="text-center"> <b> ₹ 70.0</b> </h2>
+                </div>
+            </div>
+
+            <div class="h-24 flex-shrink-0 border-2 border-orange-400 group  items-center picture-item rounded-2xl mx-auto mb-3 flex  justify-start shadow-md ">
+                <div class="p-2 w-1/5 relative align-middle ">
+                    <img src="assets/images/ka-bgm-onebite/mocktails.png"
+                        class="w-16 h-14 relative rounded-full group-hover:animate-[spin_10s_linear_infinite] h-25 w-25"
+                        alt="">
+                </div>
+                <div class="border-r-2 border-l-2 border-fuchsia-600 px-2 w-3/5 relative align-top p-0.5">
+                    <h2 class="mt-1 text-center">Mocktails</h2>
+                    <p class="text-center mt-1 text-xs font-nunito text-gray-500 truncate overflow-visible whitespace-normal  dark:text-gray-400">
+                        Mango / Strawberry / Mojito
+                    </p>
+                </div>
+                <div class="w-1/5 relative">
+                    <h2 class="text-center"> <b> ₹ 25.0</b> </h2>
+                </div>
+            </div>
+
+            <div class="h-24 flex-shrink-0 border-2 border-indigo-500 group  items-center picture-item rounded-2xl mx-auto mb-3 flex  justify-start shadow-md ">
+                <div class="p-2 w-1/5 relative align-middle ">
+                    <img src="assets/images/ka-bgm-onebite/shakes.png"
+                        class="w-16 h-16 relative rounded-full group-hover:animate-[spin_10s_linear_infinite] h-25 w-25"
+                        alt="">
+                </div>
+                <div class="border-r-2 border-l-2 border-green-500 px-2 w-3/5 relative align-top p-0.5">
+                    <h2 class="mt-1 text-center">Shakes</h2>
+                    <p class="text-center mt-1 text-xs font-nunito text-gray-500 truncate overflow-visible whitespace-normal  dark:text-gray-400">
+                        Mango / Strawberry
+                    </p>
+                </div>
+                <div class="w-1/5 relative">
+                    <h2 class="text-center"> <b> ₹ 130.0</b> </h2>
+                </div>
+            </div>
+
+            <div class="h-24 flex-shrink-0 border-2 border-orange-400 group  items-center picture-item rounded-2xl mx-auto mb-3 flex  justify-start shadow-md ">
+                <div class="p-2 w-1/5 relative align-middle ">
+                    <img src="assets/images/ka-bgm-onebite/water-bottle.png"
+                        class="w-16 h-14 relative rounded-full group-hover:animate-[spin_10s_linear_infinite] h-25 w-25"
+                        alt="">
+                </div>
+                <div class="border-r-2 border-l-2 border-fuchsia-600 px-2 w-3/5 relative align-top p-0.5">
+                    <h2 class="mt-1 text-center">Water Bottle</h2>
+                    <p class="text-center mt-1 text-xs font-nunito text-gray-500 truncate overflow-visible whitespace-normal  dark:text-gray-400">
+                        Mango / Strawberry / Mojito
+                    </p>
+                </div>
+                <div class="w-1/5 relative">
+                    <h2 class="text-center"> <b> ₹ MRP</b> </h2>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="cat2" class="w-full">
+            <br><br>
+            <h2 class="mb-4 h2 font-bold mx-auto text-center"> <u> Salad and Desserts</u></h2>
+            
+            <div class="h-24 flex-shrink-0 border-2 border-indigo-500 group  items-center picture-item rounded-2xl mx-auto mb-3 flex  justify-start shadow-md ">
+                <div class="p-2 w-1/5 relative align-middle ">
+                    <img src="assets/images/ka-bgm-onebite/salad.png"
+                        class="w-16 h-16 relative rounded-full group-hover:animate-[spin_10s_linear_infinite] h-25 w-25"
+                        alt="">
+                </div>
+                <div class="border-r-2 border-l-2 border-green-500 px-2 w-3/5 relative align-top p-0.5">
+                    <h2 class="mt-1 text-center">OB Veg Salad</h2>
+                    <p class="text-center mt-1 text-xs font-nunito text-gray-500 truncate overflow-visible whitespace-normal  dark:text-gray-400">
+                        &nbsp;
+                    </p>
+                </div>
+                <div class="w-1/5 relative">
+                    <h2 class="text-center"> <b> ₹ 125.0</b> </h2>
+                </div>
+            </div>
+
+            <div class="h-24 flex-shrink-0 border-2 border-orange-400 group  items-center picture-item rounded-2xl mx-auto mb-3 flex  justify-start shadow-md ">
+                <div class="p-2 w-1/5 relative align-middle ">
+                    <img src="assets/images/ka-bgm-onebite/salad.png"
+                        class="w-16 h-14 relative rounded-full group-hover:animate-[spin_10s_linear_infinite] h-25 w-25"
+                        alt="">
+                </div>
+                <div class="border-r-2 border-l-2 border-fuchsia-600 px-2 w-3/5 relative align-top p-0.5">
+                    <h2 class="mt-1 text-center">OB Paneer Peppery</h2>
+                    <p class="text-center mt-1 text-xs font-nunito text-gray-500 truncate overflow-visible whitespace-normal  dark:text-gray-400">
+                        &nbsp;
+                    </p>
+                </div>
+                <div class="w-1/5 relative">
+                    <h2 class="text-center"> <b> ₹ 155.0</b> </h2>
+                </div>
+            </div>
+
+            <div class="h-24 flex-shrink-0 border-2 border-indigo-500 group  items-center picture-item rounded-2xl mx-auto mb-3 flex  justify-start shadow-md ">
+                <div class="p-2 w-1/5 relative align-middle ">
+                    <img src="assets/images/ka-bgm-onebite/salad.png"
+                        class="w-16 h-16 relative rounded-full group-hover:animate-[spin_10s_linear_infinite] h-25 w-25"
+                        alt="">
+                </div>
+                <div class="border-r-2 border-l-2 border-green-500 px-2 w-3/5 relative align-top p-0.5">
+                    <h2 class="mt-1 text-center">OB Chicken Peppery</h2>
+                    <p class="text-center mt-1 text-xs font-nunito text-gray-500 truncate overflow-visible whitespace-normal  dark:text-gray-400">
+                        &nbsp;
+                    </p>
+                </div>
+                <div class="w-1/5 relative">
+                    <h2 class="text-center"> <b> ₹ 140.0</b> </h2>
+                </div>
+            </div>
+
+            <div class="h-24 flex-shrink-0 border-2 border-orange-400 group  items-center picture-item rounded-2xl mx-auto mb-3 flex  justify-start shadow-md ">
+                <div class="p-2 w-1/5 relative align-middle ">
+                    <img src="assets/images/ka-bgm-onebite/salad.png"
+                        class="w-16 h-14 relative rounded-full group-hover:animate-[spin_10s_linear_infinite] h-25 w-25"
+                        alt="">
+                </div>
+                <div class="border-r-2 border-l-2 border-fuchsia-600 px-2 w-3/5 relative align-top p-0.5">
+                    <h2 class="mt-1 text-center">OB Chicken Exotica</h2>
+                    <p class="text-center mt-1 text-xs font-nunito text-gray-500 truncate overflow-visible whitespace-normal  dark:text-gray-400">
+                        &nbsp;
+                    </p>
+                </div>
+                <div class="w-1/5 relative">
+                    <h2 class="text-center"> <b> ₹ 170.0</b> </h2>
+                </div>
+            </div>
+            <div class="h-24 flex-shrink-0 border-2 border-indigo-500 group  items-center picture-item rounded-2xl mx-auto mb-3 flex  justify-start shadow-md ">
+                <div class="p-2 w-1/5 relative align-middle ">
+                    <img src="assets/images/ka-bgm-onebite/ice-cream.png"
+                        class="w-16 h-16 relative rounded-full group-hover:animate-[spin_10s_linear_infinite] h-25 w-25"
+                        alt="">
+                </div>
+                <div class="border-r-2 border-l-2 border-green-500 px-2 w-3/5 relative align-top p-0.5">
+                    <h2 class="mt-1 text-center">Ice Cream</h2>
+                    <p class="text-center mt-1 text-xs font-nunito text-gray-500 truncate overflow-visible whitespace-normal  dark:text-gray-400">
+                        &nbsp;
+                    </p>
+                </div>
+                <div class="w-1/5 relative">
+                    <h2 class="text-center"> <b> ₹ 120.0</b> </h2>
+                </div>
+            </div>
+
+            <div class="h-24 flex-shrink-0 border-2 border-orange-400 group  items-center picture-item rounded-2xl mx-auto mb-3 flex  justify-start shadow-md ">
+                <div class="p-2 w-1/5 relative align-middle ">
+                    <img src="assets/images/ka-bgm-onebite/hot-choco.png"
+                        class="w-16 h-14 relative rounded-full group-hover:animate-[spin_10s_linear_infinite] h-25 w-25"
+                        alt="">
+                </div>
+                <div class="border-r-2 border-l-2 border-fuchsia-600 px-2 w-3/5 relative align-top p-0.5">
+                    <h2 class="mt-1 text-center">Choco</h2>
+                    <p class="text-center mt-1 text-xs font-nunito text-gray-500 truncate overflow-visible whitespace-normal  dark:text-gray-400">
+                        Hot / Frozeen
+                    </p>
+                </div>
+                <div class="w-1/5 relative">
+                    <h2 class="text-center"> <b> ₹ 120.0</b> </h2>
+                </div>
+            </div>
+        </div>
+
+        <div id="cat3" class="w-full">
+            <br><br>
+            <h2 class="mb-4 h2 font-bold mx-auto text-center"> <u> Lava Cake</u></h2>
+            
+            <div class="h-24 flex-shrink-0 border-2 border-indigo-500 group  items-center picture-item rounded-2xl mx-auto mb-3 flex  justify-start shadow-md ">
+                <div class="p-2 w-1/5 relative align-middle ">
+                    <img src="assets/images/ka-bgm-onebite/lava-cake.png"
+                        class="w-16 h-16 relative rounded-full group-hover:animate-[spin_10s_linear_infinite] h-25 w-25"
+                        alt="">
+                </div>
+                <div class="border-r-2 border-l-2 border-green-500 px-2 w-3/5 relative align-top p-0.5">
+                    <h2 class="mt-1 text-center">Choco Lava Cake</h2>
+                    <p class="text-center mt-1 text-xs font-nunito text-gray-500 truncate overflow-visible whitespace-normal  dark:text-gray-400">
+                        &nbsp;
+                    </p>
+                </div>
+                <div class="w-1/5 relative">
+                    <h2 class="text-center"> <b> ₹ 70.0</b> </h2>
+                </div>
+            </div>
+
+            <div class="h-24 flex-shrink-0 border-2 border-orange-400 group  items-center picture-item rounded-2xl mx-auto mb-3 flex  justify-start shadow-md ">
+                <div class="p-2 w-1/5 relative align-middle ">
+                    <img src="assets/images/ka-bgm-onebite/lava-cake.png"
+                        class="w-16 h-14 relative rounded-full group-hover:animate-[spin_10s_linear_infinite] h-25 w-25"
+                        alt="">
+                </div>
+                <div class="border-r-2 border-l-2 border-fuchsia-600 px-2 w-3/5 relative align-top p-0.5">
+                    <h2 class="mt-1 text-center">Choco Lava Cake with Ice Cream</h2>
+                    <p class="text-center mt-1 text-xs font-nunito text-gray-500 truncate overflow-visible whitespace-normal  dark:text-gray-400">
+                        &nbsp;
+                    </p>
+                </div>
+                <div class="w-1/5 relative">
+                    <h2 class="text-center"> <b> ₹ 70.0</b> </h2>
+                </div>
+            </div>
+
+        </div>
+        
+        <div id="cat4" class="w-full">
+            <br><br>
+            <h2 class="mb-4 h2 font-bold mx-auto text-center"> <u> Veg Sandwich and Loaf</u></h2>
+            
+            <div class="h-24 flex-shrink-0 border-2 border-indigo-500 group  items-center picture-item rounded-2xl mx-auto mb-3 flex  justify-start shadow-md ">
+                <div class="p-2 w-1/5 relative align-middle ">
+                    <img src="assets/images/ka-bgm-onebite/veg-sandwich.png"
+                        class="w-16 h-16 relative rounded-full group-hover:animate-[spin_10s_linear_infinite] h-25 w-25"
+                        alt="">
+                </div>
+                <div class="border-r-2 border-l-2 border-green-500 px-2 w-3/5 relative align-top p-0.5">
+                    <h2 class="mt-1 text-center">OB Cheese Cottage</h2>
+                    <p class="text-center mt-1 text-xs font-nunito text-gray-500 truncate overflow-visible whitespace-normal  dark:text-gray-400">
+                        Cabbage, Tomato, Cucumber, Carrot 
+                    </p>
+                </div>
+                <div class="w-1/5 relative">
+                    <h2 class="text-center"> <b> ₹ 80.0</b> </h2>
+                </div>
+            </div>
+
+            <div class="h-24 flex-shrink-0 border-2 border-orange-400 group  items-center picture-item rounded-2xl mx-auto mb-3 flex  justify-start shadow-md ">
+                <div class="p-2 w-1/5 relative align-middle ">
+                    <img src="assets/images/ka-bgm-onebite/veg-sandwich.png"
+                        class="w-16 h-14 relative rounded-full group-hover:animate-[spin_10s_linear_infinite] h-25 w-25"
+                        alt="">
+                </div>
+                <div class="border-r-2 border-l-2 border-fuchsia-600 px-2 w-3/5 relative align-top p-0.5">
+                    <h2 class="mt-1 text-center">OB Paneer Peppery</h2>
+                    <p class="text-center mt-1 text-xs font-nunito text-gray-500 truncate overflow-visible whitespace-normal  dark:text-gray-400">
+                        Tomato, Onion, Capsicum, Paneer Tikka
+                    </p>
+                </div>
+                <div class="w-1/5 relative">
+                    <h2 class="text-center"> <b> ₹ 100.0</b> </h2>
+                </div>
+            </div>
+
+            <div class="h-24 flex-shrink-0 border-2 border-indigo-500 group  items-center picture-item rounded-2xl mx-auto mb-3 flex  justify-start shadow-md ">
+                <div class="p-2 w-1/5 relative align-middle ">
+                    <img src="assets/images/ka-bgm-onebite/veg-sandwich.png"
+                        class="w-16 h-16 relative rounded-full group-hover:animate-[spin_10s_linear_infinite] h-25 w-25"
+                        alt="">
+                </div>
+                <div class="border-r-2 border-l-2 border-green-500 px-2 w-3/5 relative align-top p-0.5">
+                    <h2 class="mt-1 text-center">OB Veggie Spanish</h2>
+                    <p class="text-center mt-1 text-xs font-nunito text-gray-500 truncate overflow-visible whitespace-normal  dark:text-gray-400">
+                        Tomato, Black Olive, Capsicum, Corn
+                    </p>
+                </div>
+                <div class="w-1/5 relative">
+                    <h2 class="text-center"> <b> ₹ 110.0</b> </h2>
+                </div>
+            </div>
+
+            <div class="h-24 flex-shrink-0 border-2 border-orange-400 group  items-center picture-item rounded-2xl mx-auto mb-3 flex  justify-start shadow-md ">
+                <div class="p-2 w-1/5 relative align-middle ">
+                    <img src="assets/images/ka-bgm-onebite/veg-loaf.png"
+                        class="w-16 h-14 relative rounded-full group-hover:animate-[spin_10s_linear_infinite] h-25 w-25"
+                        alt="">
+                </div>
+                <div class="border-r-2 border-l-2 border-fuchsia-600 px-2 w-3/5 relative align-top p-0.5">
+                    <h2 class="mt-1 text-center">OB Fresh Cheese Loaf (Small) </h2>
+                    <p class="text-center mt-1 text-xs font-nunito text-gray-500 truncate overflow-visible whitespace-normal  dark:text-gray-400">
+                        Cheese, Tomato, Onion, Capsicum <span class="font-bold text-red-600">(Large - ₹165)</span> 
+                    </p>
+                </div>
+                <div class="w-1/5 relative">
+                    <h2 class="text-center"> <b> ₹ 90.0</b> </h2>
+                </div>
+            </div>
+
+            <div class="h-24 flex-shrink-0 border-2 border-indigo-500 group  items-center picture-item rounded-2xl mx-auto mb-3 flex  justify-start shadow-md ">
+                <div class="p-2 w-1/5 relative align-middle ">
+                    <img src="assets/images/ka-bgm-onebite/veg-loaf.png"
+                        class="w-16 h-16 relative rounded-full group-hover:animate-[spin_10s_linear_infinite] h-25 w-25"
+                        alt="">
+                </div>
+                <div class="border-r-2 border-l-2 border-green-500 px-2 w-3/5 relative align-top p-0.5">
+                    <h2 class="mt-1 text-center">OB Paneer Cheese Loaf - (Small)</h2>
+                    <p class="text-center mt-1 text-xs font-nunito text-gray-500 truncate overflow-visible whitespace-normal  dark:text-gray-400">
+                        Cheese, Tomato, Onion, Capsicum, Paneer, Green Chilli <span class="font-bold text-red-600">(Large - ₹195)</span> 
+                    </p>
+                </div>
+                <div class="w-1/5 relative">
+                    <h2 class="text-center"> <b> ₹ 110.0</b> </h2>
+                </div>
+            </div>
+
+            <div class="h-24 flex-shrink-0 border-2 border-orange-400 group  items-center picture-item rounded-2xl mx-auto mb-3 flex  justify-start shadow-md ">
+                <div class="p-2 w-1/5 relative align-middle ">
+                    <img src="assets/images/ka-bgm-onebite/veg-loaf.png"
+                        class="w-16 h-14 relative rounded-full group-hover:animate-[spin_10s_linear_infinite] h-25 w-25"
+                        alt="">
+                </div>
+                <div class="border-r-2 border-l-2 border-fuchsia-600 px-2 w-3/5 relative align-top p-0.5">
+                    <h2 class="mt-1 text-center">OB Paneer Peppery (Small) </h2>
+                    <p class="text-center mt-1 text-xs font-nunito text-gray-500 truncate overflow-visible whitespace-normal  dark:text-gray-400">
+                        Tomato, Onion, Capsicum, Paneer Tikka <span class="font-bold text-red-600">(Large - ₹215)</span> 
+                    </p>
+                </div>
+                <div class="w-1/5 relative">
+                    <h2 class="text-center"> <b> ₹ 125.0</b> </h2>
+                </div>
+            </div>
+
+            <div class="h-24 flex-shrink-0 border-2 border-indigo-500 group  items-center picture-item rounded-2xl mx-auto mb-3 flex  justify-start shadow-md ">
+                <div class="p-2 w-1/5 relative align-middle ">
+                    <img src="assets/images/ka-bgm-onebite/veg-loaf.png"
+                        class="w-16 h-16 relative rounded-full group-hover:animate-[spin_10s_linear_infinite] h-25 w-25"
+                        alt="">
+                </div>
+                <div class="border-r-2 border-l-2 border-green-500 px-2 w-3/5 relative align-top p-0.5">
+                    <h2 class="mt-1 text-center">OB Festa Veggie - (Small)</h2>
+                    <p class="text-center mt-1 text-xs font-nunito text-gray-500 truncate overflow-visible whitespace-normal  dark:text-gray-400">
+                        Tomato, Onion, Capsicum, Bkack Olive, Corn <span class="font-bold text-red-600">(Large - ₹240)</span> 
+                    </p>
+                </div>
+                <div class="w-1/5 relative">
+                    <h2 class="text-center"> <b> ₹ 130.0</b> </h2>
+                </div>
+            </div>
+
+            <div class="h-24 flex-shrink-0 border-2 border-orange-400 group  items-center picture-item rounded-2xl mx-auto mb-3 flex  justify-start shadow-md ">
+                <div class="p-2 w-1/5 relative align-middle ">
+                    <img src="assets/images/ka-bgm-onebite/veg-loaf.png"
+                        class="w-16 h-14 relative rounded-full group-hover:animate-[spin_10s_linear_infinite] h-25 w-25"
+                        alt="">
+                </div>
+                <div class="border-r-2 border-l-2 border-fuchsia-600 px-2 w-3/5 relative align-top p-0.5">
+                    <h2 class="mt-1 text-center">OB Cheese Mushroom (Small) </h2>
+                    <p class="text-center mt-1 text-xs font-nunito text-gray-500 truncate overflow-visible whitespace-normal  dark:text-gray-400">
+                        Tomato, Onion, Capsicum, Corn, Mushroom <span class="font-bold text-red-600">(Large - ₹265)</span> 
+                    </p>
+                </div>
+                <div class="w-1/5 relative">
+                    <h2 class="text-center"> <b> ₹ 145.0</b> </h2>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="cat5" class="w-full">
+            <br><br>
+            <h2 class="mb-4 h2 font-bold mx-auto text-center"> <u> Non-Veg Sandwich and Loaf</u></h2>
+            
+            <div class="h-24 flex-shrink-0 border-2 border-indigo-500 group  items-center picture-item rounded-2xl mx-auto mb-3 flex  justify-start shadow-md ">
+                <div class="p-2 w-1/5 relative align-middle ">
+                    <img src="assets/images/ka-bgm-onebite/non-veg-sanwich.png"
+                        class="w-16 h-16 relative rounded-full group-hover:animate-[spin_10s_linear_infinite] h-25 w-25"
+                        alt="">
+                </div>
+                <div class="border-r-2 border-l-2 border-green-500 px-2 w-3/5 relative align-top p-0.5">
+                    <h2 class="mt-1 text-center">OB Chicken Cottage</h2>
+                    <p class="text-center mt-1 text-xs font-nunito text-gray-500 truncate overflow-visible whitespace-normal  dark:text-gray-400">
+                        Chicken, Cabbage, Carrot 
+                    </p>
+                </div>
+                <div class="w-1/5 relative">
+                    <h2 class="text-center"> <b> ₹ 95.0</b> </h2>
+                </div>
+            </div>
+
+            <div class="h-24 flex-shrink-0 border-2 border-orange-400 group  items-center picture-item rounded-2xl mx-auto mb-3 flex  justify-start shadow-md ">
+                <div class="p-2 w-1/5 relative align-middle ">
+                    <img src="assets/images/ka-bgm-onebite/non-veg-sanwich.png"
+                        class="w-16 h-14 relative rounded-full group-hover:animate-[spin_10s_linear_infinite] h-25 w-25"
+                        alt="">
+                </div>
+                <div class="border-r-2 border-l-2 border-fuchsia-600 px-2 w-3/5 relative align-top p-0.5">
+                    <h2 class="mt-1 text-center">OB Chicken Peppery</h2>
+                    <p class="text-center mt-1 text-xs font-nunito text-gray-500 truncate overflow-visible whitespace-normal  dark:text-gray-400">
+                        Chicken Tikka, Tomato, Onion, Capsicum
+                    </p>
+                </div>
+                <div class="w-1/5 relative">
+                    <h2 class="text-center"> <b> ₹ 110.0</b> </h2>
+                </div>
+            </div>
+
+            <div class="h-24 flex-shrink-0 border-2 border-indigo-500 group  items-center picture-item rounded-2xl mx-auto mb-3 flex  justify-start shadow-md ">
+                <div class="p-2 w-1/5 relative align-middle ">
+                    <img src="assets/images/ka-bgm-onebite/non-veg-sanwich.png"
+                        class="w-16 h-16 relative rounded-full group-hover:animate-[spin_10s_linear_infinite] h-25 w-25"
+                        alt="">
+                </div>
+                <div class="border-r-2 border-l-2 border-green-500 px-2 w-3/5 relative align-top p-0.5">
+                    <h2 class="mt-1 text-center">OB Chicken Spanish</h2>
+                    <p class="text-center mt-1 text-xs font-nunito text-gray-500 truncate overflow-visible whitespace-normal  dark:text-gray-400">
+                        Chicken, Tomato, Black Olive, Capsicum, Corn
+                    </p>
+                </div>
+                <div class="w-1/5 relative">
+                    <h2 class="text-center"> <b> ₹ 130.0</b> </h2>
+                </div>
+            </div>
+
+            <div class="h-24 flex-shrink-0 border-2 border-orange-400 group  items-center picture-item rounded-2xl mx-auto mb-3 flex  justify-start shadow-md ">
+                <div class="p-2 w-1/5 relative align-middle ">
+                    <img src="assets/images/ka-bgm-onebite/non-veg-loaf.png"
+                        class="w-16 h-14 relative rounded-full group-hover:animate-[spin_10s_linear_infinite] h-25 w-25"
+                        alt="">
+                </div>
+                <div class="border-r-2 border-l-2 border-fuchsia-600 px-2 w-3/5 relative align-top p-0.5">
+                    <h2 class="mt-1 text-center">OB Chicken Cheese Loaf (Small) </h2>
+                    <p class="text-center mt-1 text-xs font-nunito text-gray-500 truncate overflow-visible whitespace-normal  dark:text-gray-400">
+                        Chicken, Tomato, Onion, Capsicum <span class="font-bold text-red-600">(Large - ₹175)</span> 
+                    </p>
+                </div>
+                <div class="w-1/5 relative">
+                    <h2 class="text-center"> <b> ₹ 107.0</b> </h2>
+                </div>
+            </div>
+
+            <div class="h-24 flex-shrink-0 border-2 border-indigo-500 group  items-center picture-item rounded-2xl mx-auto mb-3 flex  justify-start shadow-md ">
+                <div class="p-2 w-1/5 relative align-middle ">
+                    <img src="assets/images/ka-bgm-onebite/non-veg-loaf.png"
+                        class="w-16 h-16 relative rounded-full group-hover:animate-[spin_10s_linear_infinite] h-25 w-25"
+                        alt="">
+                </div>
+                <div class="border-r-2 border-l-2 border-green-500 px-2 w-3/5 relative align-top p-0.5">
+                    <h2 class="mt-1 text-center">OB Chicken Peppery - (Small)</h2>
+                    <p class="text-center mt-1 text-xs font-nunito text-gray-500 truncate overflow-visible whitespace-normal  dark:text-gray-400">
+                        Chicken Tikka, Tomato, Onion, Capsicum <span class="font-bold text-red-600">(Large - ₹210)</span> 
+                    </p>
+                </div>
+                <div class="w-1/5 relative">
+                    <h2 class="text-center"> <b> ₹ 130.0</b> </h2>
+                </div>
+            </div>
+
+            <div class="h-28 flex-shrink-0 border-2 border-orange-400 group  items-center picture-item rounded-2xl mx-auto mb-3 flex  justify-start shadow-md ">
+                <div class="p-2 w-1/5 relative align-middle ">
+                    <img src="assets/images/ka-bgm-onebite/non-veg-loaf.png"
+                        class="w-16 h-14 relative rounded-full group-hover:animate-[spin_10s_linear_infinite] h-25 w-25"
+                        alt="">
+                </div>
+                <div class="border-r-2 border-l-2 border-fuchsia-600 px-2 w-3/5 relative align-top p-0.5">
+                    <h2 class="mt-1 text-center">OB Chicken Fiesta (Small) </h2>
+                    <p class="text-center mt-1 text-xs font-nunito text-gray-500 truncate overflow-visible whitespace-normal  dark:text-gray-400">
+                        Chicken, Corn, Tomato, Onion, Capsicum, Black Olive <span class="font-bold text-red-600">(Large - ₹245)</span> 
+                    </p>
+                </div>
+                <div class="w-1/5 relative">
+                    <h2 class="text-center"> <b> ₹ 140.0</b> </h2>
+                </div>
+            </div>
+
+            <div class="h-28 flex-shrink-0 border-2 border-indigo-500 group  items-center picture-item rounded-2xl mx-auto mb-3 flex  justify-start shadow-md ">
+                <div class="p-2 w-1/5 relative align-middle ">
+                    <img src="assets/images/ka-bgm-onebite/non-veg-loaf.png"
+                        class="w-16 h-16 relative rounded-full group-hover:animate-[spin_10s_linear_infinite] h-25 w-25"
+                        alt="">
+                </div>
+                <div class="border-r-2 border-l-2 border-green-500 px-2 w-3/5 relative align-top p-0.5">
+                    <h2 class="mt-1 text-center">OB Festa Exotica - (Small)</h2>
+                    <p class="text-center mt-1 text-xs font-nunito text-gray-500 truncate overflow-visible whitespace-normal  dark:text-gray-400">
+                        Mushroom, Chicken, Tomato, Corn, Jalapeno, Onion, Capsicum <span class="font-bold text-red-600">(Large - ₹265)</span> 
+                    </p>
+                </div>
+                <div class="w-1/5 relative">
+                    <h2 class="text-center"> <b> ₹ 150.0</b> </h2>
+                </div>
+            </div>
+
+            <div class="h-24 flex-shrink-0 border-2 border-orange-400 group  items-center picture-item rounded-2xl mx-auto mb-3 flex  justify-start shadow-md ">
+                <div class="p-2 w-1/5 relative align-middle ">
+                    <img src="assets/images/ka-bgm-onebite/non-veg-loaf.png"
+                        class="w-16 h-14 relative rounded-full group-hover:animate-[spin_10s_linear_infinite] h-25 w-25"
+                        alt="">
+                </div>
+                <div class="border-r-2 border-l-2 border-fuchsia-600 px-2 w-3/5 relative align-top p-0.5">
+                    <h2 class="mt-1 text-center">OB Chicken Cheese Mushroom (Small) </h2>
+                    <p class="text-center mt-1 text-xs font-nunito text-gray-500 truncate overflow-visible whitespace-normal  dark:text-gray-400">
+                        Chicken, Mushroom, Tomato, Onion, Capsicum, Corn <span class="font-bold text-red-600">(Large - ₹300)</span> 
+                    </p>
+                </div>
+                <div class="w-1/5 relative">
+                    <h2 class="text-center"> <b> ₹ 170.0</b> </h2>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+
+    <!-- End Menu -->
+</section>
+<!--end section-->
+
+<!-- Footer Start -->
+<footer class="footer bg-dark-footer relative text-gray-200 dark:text-gray-200">    
+    <div class="container">
+        <div class="grid grid-cols-12">
+            <div class="col-span-12">
+                <div class="py-[60px] px-0">
+                    <div class="grid lg:grid-cols-3 md:grid-cols-6 justify-center gap-[30px]">
+                        <div class="text-center">
+                            <h5 class="tracking-[1px] text-gray-100 font-semibold mb-4">Open Hours</h5>
+                            <p class="mb-2">Monday - Friday: 10 AM - 11 PM</p>
+                            <p class="mb-0">Saturday - Sunday: 9 AM - 1 PM</p>
+                        </div>
+                    
+                        <div class="text-center">
+                            <h5 class="tracking-[1px] text-gray-100 font-semibold mb-4">Reservation</h5>
+                            <p class="mb-2"><a href="tel:+152534-468-854" class="text-gray-200">+91-9008645643</a></p>
+                            <p class="mb-0"><a href="mailto:contact@example.com" class="text-gray-200">contact@example.com</a></p>
+                        </div>
+
+                        <div class="text-center">
+                            <h5 class="tracking-[1px] text-gray-100 font-semibold mb-4">Address</h5>
+                            <p class="mb-2">Shop No.6 & 7, Safa Highlights</p>
+                            <p class="mb-0">Nehru Nagar, 2nd cross, Belagavi-590001</p>
+                        </div>
+                    </div><!--end grid-->
+
+                    
+                    <div class="grid grid-cols-1 mt-12">
+                        <div class="absolute inset-0 bg-black opacity-30"></div>
+                        <div class="container">
+                                  
+                                    <div class="group lg:w-1/5 md:w-1/3 picture-item p-3 mx-auto" data-groups='["break"]'>
+                                        <img src="assets/images/ka-bgm-onebite/bottom-logo.png" class="rounded-full h-32 w-32 mx-auto group-hover:animate-[spin_10s_linear_infinite]" alt="">
+                                    </div>    
+ 
+                        </div>
+
+                        <ul class="list-none text-center mt-6">
+                            <li class="inline"><a href="#" target="_blank" class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i class="uil uil-shopping-cart align-middle" title="Menu do"></i></a></li>
+                            <li class="inline"><a href="#" target="_blank" class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i class="uil uil-dribbble align-middle" title="Menu do"></i></a></li>
+                            <li class="inline"><a href="#" target="_blank" class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i class="uil uil-behance" title="Menu do"></i></a></li>
+                            <li class="inline"><a href="#" target="_blank" class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i class="uil uil-linkedin" title="Menu do"></i></a></li>
+                            <li class="inline"><a href="#" target="_blank" class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i class="uil uil-facebook-f align-middle" title="Menu do"></i></a></li>
+                            <li class="inline"><a href="#" target="_blank" class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i class="uil uil-instagram align-middle" title="Menu do"></i></a></li>
+                            <li class="inline"><a href="#" target="_blank" class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i class="uil uil-twitter align-middle" title="Menu do"></i></a></li>
+                            <li class="inline"><a href="mailto:contact@aradhyait.com" class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i class="uil uil-envelope align-middle" title="email"></i></a></li>
+                            <li class="inline"><a href="#" target="_blank" class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i class="uil uil-file align-middle" title="Menu do"></i></a></li>
+                        </ul><!--end icon-->
+                    </div><!--end grid-->
+                </div>
+            </div>
+        </div><!--end grid-->
+    </div><!--end container-->
+
+    
+</footer><!--end footer-->
+<!-- Footer End -->
+
+<!-- Back to top -->
+<a href="#" onclick="topFunction()" id="back-to-top"
+    class="back-to-top fixed hidden text-lg rounded-full z-10 bottom-5 right-5 h-9 w-9 text-center bg-orange-500 text-white leading-9">
+    <i class="uil uil-arrow-up"></i>
+</a>
+<!-- Back to top -->
+
+@@include("partials/switcher.html")
+
+<!-- JAVASCRIPTS -->
+@@include("partials/script-file.html")
+
+
+</body>
+
+</html>
