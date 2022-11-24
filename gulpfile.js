@@ -110,7 +110,7 @@ gulp.task('watch', function () {
 gulp.task('js', function () {
     return gulp
         .src(paths.src.js.main)
-         //.pipe(uglify())
+         .pipe(uglify())
         .pipe(gulp.dest(paths.dist.js.dir));
 });
 
